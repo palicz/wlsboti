@@ -24,6 +24,9 @@
 
 1. **Python Telepítése:** A projekt futtatásához Python szükséges. Telepítsd a [Python](https://www.python.org/) legfrissebb verzióját.
 
+> [!CAUTION]
+> **"Add python.exe to path"**: Ezt az opciót mindenképpen pipáld be a telepítés során, hogy később lehessen használni a dedikált parancsokat a parancssorban!
+
 2. **Könyvtárak Telepítése:** Nyisd meg a parancssort, és telepítsd a szükséges könyvtárakat a következő parancsokkal:
    ```bash
    pip install numpy opencv-python pillow pywin32
