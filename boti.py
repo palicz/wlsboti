@@ -40,9 +40,9 @@ class ConsoleRedirector:
 def create_directory(directory_path):
     if not os.path.exists(directory_path):
         os.makedirs(directory_path)
-        print(f"Directory '{directory_path}' created successfully.")
+        print(f"'{directory_path}' sikeresen létrehozva.")
     else:
-        print(f"Directory '{directory_path}' already exists.")
+        print(f"'{directory_path}' már létezik.")
 
 
 directory = "./boti_data"
@@ -298,7 +298,7 @@ def show_category(window, category):
 
         text_label = ttk.Label(
             usage_box,
-            text="- Indítsd el a FiveM-et és lépj fel a WLS szerverre.\n\n- Menj a beállításokba, és állítsd át a felbontást 800x600-ra, illetve ablakos módra.\n\n- Húzd a FiveM ablakot a monitorod BAL-FELSŐ sarkába.\n\n- Kattints a 'Start' gombra, majd van 4 másodperced, hogy visszakattints a játékba.",
+            text="- Indítsd el a FiveM-et és lépj fel a WLS szerverre.\n\n- Menj a beállításokba, és állítsd át a felbontást 800x600-ra, illetve ablakos módra.\n\n- Húzd a FiveM ablakot a monitorod BAL-FELSŐ sarkába. Válts belső nézetre, hogy a karaktered ne látszódjon.\n\n- Kattints a 'Start' gombra, majd van 4 másodperced, hogy visszakattints a játékba.",
             wraplength=300,
             justify="left",
             style="UsageMessage.TLabel",
@@ -373,7 +373,7 @@ def show_category(window, category):
 
         def open_github_link(event):
             webbrowser.open(
-                "https://github.com"
+                "https://github.com/palicz/wlsboti"
             )
 
         text_widget = tk.Text(
@@ -496,7 +496,7 @@ def show_settings_window():
     exclamation_label.grid(row=0, column=0, sticky="w", padx=(25, 50), pady=10)
 
     def open_github_link(event):
-        webbrowser.open("https://github.com")
+        webbrowser.open("https://github.com/palicz/wlsboti")
 
     text_widget = tk.Text(
         info_box, width=25, height=3, wrap="word", bd=0, highlightthickness=0
